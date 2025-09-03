@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Community Helper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <span class="ch-logo-circle">CH</span>
+        <span class="navbar-title">Community Helper</span>
+      </div>
+      <div class="navbar-links">
+        <a href="#" id="navHome">Home</a>
+        <a href="#" id="navForms">Forms</a>
+        <a href="#" id="navAbout">About</a>
+        <a href="#" id="navAdmin">Admin</a>
+        <a href="#" id="navLogout">Logout</a>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Community Helper</h1>
+
+      <div id="auth">
+        <h2>Login</h2>
+        <input id="username" placeholder="username" />
+        <input id="password" placeholder="password" type="password" />
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign up</button>
+        <p id="authMsg"></p>
+      </div>
+
+      <div id="app" class="hidden">
+        <div class="top">
+          <span id="welcome"></span>
+          <button id="logoutBtn">Logout</button>
+        </div>
+
+        <div id="mainContent">
+          <section id="homeSection">
+            <div class="hero">
+              <div class="hero-logo"><span>CH</span></div>
+              <h2>Welcome to Community Helper</h2>
+              <p><b>Bazil Jani</b><br>Creator of this site<br>Web Developer /
+                WordPress Developer</p>
+              <div class="hero-links">
+                <a href="https://github.com/baziljani" target="_blank"
+                  rel="noopener" aria-label="GitHub"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    width="22" style="vertical-align:middle;"> GitHub</a>
+                <a href="https://linkedin.com/in/bazil-jani-48655113b"
+                  target="_blank"
+                  rel="noopener" aria-label="LinkedIn"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    width="22" style="vertical-align:middle;"> LinkedIn</a>
+                <a
+                  href="https://www.instagram.com/professor_bazil/?utm_source=ig_web_button_share_sheet"
+                  target="_blank"
+                  rel="noopener" aria-label="Instagram"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg"
+                    width="22" style="vertical-align:middle;"> Instagram</a>
+                <a href="https://facebook.com/bazil.don.39/" target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+                    width="22" style="vertical-align:middle;"> Facebook</a>
+                <a href="https://practice-jixn.vercel.app/" target="_blank"
+                  rel="noopener" aria-label="Study Materials"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                    width="22" style="vertical-align:middle;"> Study
+                  Materials</a>
+              </div>
+            </div>
+            <div class="forms">
+              <h2 class="attractive-heading">Available Forms</h2>
+              <div id="formsListContainerHome"></div>
+            </div>
+          </section>
+          <section id="formsSection" class="hidden">
+            <div class="forms">
+              <h2 class="attractive-heading">Available Forms</h2>
+              <div id="formsListContainer"></div>
+              <label for="formsSelect" class="form-label">Select form:</label>
+              <select id="formsSelect"
+                title="Select a form to generate"></select>
+              <button id="genBtn">Generate Form</button>
+            </div>
+            <div id="preview"></div>
+            <h2 class="attractive-heading">iFrame code</h2>
+            <textarea id="iframeCode" rows="6" class="fullwidth"
+              placeholder="Generated iFrame code will appear here"
+              title="iFrame code"></textarea>
+          </section>
+          <section id="aboutSection" class="hidden">
+            <div class="hero">
+              <div class="hero-logo"><span>CH</span></div>
+              <h2>About Community Helper</h2>
+              <p>Hello! I'm <b>Bazil Jani</b>, the creator of this site. My
+                journey as a web and WordPress developer has been driven by a
+                passion for helping communities and making digital tools
+                accessible to everyone.</p>
+              <p>This site lets you generate, manage, and share forms easily.
+                Whether you're collecting job applications, feedback, or
+                anything else, Community Helper is here for you.</p>
+              <div class="hero-links">
+                <a href="https://github.com/baziljani" target="_blank"
+                  rel="noopener" aria-label="GitHub"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    width="22" style="vertical-align:middle;"> GitHub</a>
+                <a href="https://linkedin.com/in/bazil-jani-48655113b"
+                  target="_blank"
+                  rel="noopener" aria-label="LinkedIn"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    width="22" style="vertical-align:middle;"> LinkedIn</a>
+                <a
+                  href="https://www.instagram.com/professor_bazil/?utm_source=ig_web_button_share_sheet"
+                  target="_blank"
+                  rel="noopener" aria-label="Instagram"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg"
+                    width="22" style="vertical-align:middle;"> Instagram</a>
+                <a href="https://facebook.com/bazil.don.39/" target="_blank"
+                  rel="noopener"
+                  aria-label="Facebook"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+                    width="22" style="vertical-align:middle;"> Facebook</a>
+                <a href="https://practice-jixn.vercel.app/" target="_blank"
+                  rel="noopener" aria-label="Study Materials"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                    width="22" style="vertical-align:middle;"> Study
+                  Materials</a>
+              </div>
+            </div>
+          </section>
+          <section id="adminSection" class="hidden">
+            <h3>Admin Logs</h3>
+            <div id="logs"></div>
+            <h3>All Users</h3>
+            <div id="usersList"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <span>© 2025 Community Helper. Made with ❤️ by Bazil Jani. All rights
+          reserved.</span>
+        <span class="footer-social">
+          <a href="https://github.com/baziljani" target="_blank" rel="noopener"
+            aria-label="GitHub"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              width="22"></a>
+          <a href="https://linkedin.com/in/bazil-jani-48655113b" target="_blank"
+            rel="noopener" aria-label="LinkedIn"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+              width="22"></a>
+          <a
+            href="https://www.instagram.com/professor_bazil/?utm_source=ig_web_button_share_sheet"
+            target="_blank" rel="noopener"
+            aria-label="Instagram"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/instagram/instagram-original.svg"
+              width="22"></a>
+          <a href="https://facebook.com/bazil.don.39/" target="_blank"
+            rel="noopener"
+            aria-label="Facebook"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+              width="22"></a>
+          <a href="https://practice-jixn.vercel.app/" target="_blank"
+            rel="noopener" aria-label="Study Materials"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+              width="22"></a>
+        </span>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
